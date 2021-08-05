@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function btn1_click()
+        {
+            var inp1 = document.getElementById("inp1");
+            var val = inp1.value;
+            
+            var myspan = document.getElementById("span");
+            myspan.innerHTML = val;
+            
+            var newspan = document.createElement("p");
+            newspan.style = "color:red;";
+            newspan.innerText = "EEEE";
+            myspan.appendChild(newspan);
+            myspan.innerHTML = newspan.outerHTML;
+        }
+
+    </script>
+    <div>
+        Quan:
+        <input type="text" id="inp1"/>
+
+        <buttom type="buttom" id="btn1" onclick="btn1_click()" style="border: black;">Click</buttom>
+    </div>
+    <span id="span" style="background:lightgray;color: mediumaquamarine;font-size: 32px;">
+
+    </span>
+    <div style="Color:red">HHHH</div>
+</body>
+</html>
